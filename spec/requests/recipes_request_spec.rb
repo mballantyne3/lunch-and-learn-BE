@@ -33,6 +33,17 @@ RSpec.describe 'recipe request' do
     )
   end
 
+  it 'selects a random country when the user does not select one' do
+    allow(CountryFacade).to receive(:randomize_country).and_return('germany')
+
+    get '/api/v1/recipes'
+
+    parsed_response = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to be_successful
+    expect(parsed_response[:data][0][:attributes][:country]).to eq('germany')
+  end
+
   describe 'sad path' do
     it 'returns an empty array if the country parameter is an empty string or the value does not have any recipes' do
       get "/api/v1/recipes?country="
