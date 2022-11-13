@@ -1,8 +1,8 @@
 class RecipeFacade
-
   def self.recipes(country)
-    RecipeService.recipes(country)[:hits][0][:recipe].map do |recipe_data|
-      Recipe.new(recipe_data)
+    RecipeService.recipes(country)[:hits].map do |recipe_data|
+      recipe_data[:recipe][:country] = country
+      RecipePoro.new(recipe_data[:recipe])
     end
   end
 end

@@ -8,8 +8,8 @@ class RecipeService
   end
 
   def self.recipes(country)
-    if country == nil
-
+    if country == ''
+      return { hits: [] }
     end
     response = conn.get('/api/recipes/v2', q: country)
     JSON.parse(response.body, symbolize_names: true)
