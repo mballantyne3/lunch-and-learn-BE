@@ -357,7 +357,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668207621653</updated>
-      <workItem from="1668207624986" duration="44370000" />
+      <workItem from="1668207624986" duration="45567000" />
     </task>
     <servers />
   </component>
@@ -372,5 +372,6 @@
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@recipe_request_sad_path_returns_an_empty_array_if_the_country_parameter_is_an_empty_string_or_the_value_does_not_have_any_recipes.rcov" NAME="recipe request sad path returns an empty array if the country parameter is an empty string or the value does not have any recipes Coverage Results" MODIFIED="1668369986774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@geoapify_API_service_connection_can_connect_to_the_places_Geoapify_API_Service.rcov" NAME="geoapify API service connection can connect to the places Geoapify API Service Coverage Results" MODIFIED="1668449316882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@learning_service_connection_can_connect_to_the_Youtube_Service.rcov" NAME="learning service connection can connect to the Youtube Service Coverage Results" MODIFIED="1668379076445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
+    <SUITE FILE_PATH="coverage/lunch_and_learn_BE@tourist_sights_poro_exists_and_has_attributes.rcov" NAME="tourist sights poro exists and has attributes Coverage Results" MODIFIED="1668451893514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
   </component>
 </project>
