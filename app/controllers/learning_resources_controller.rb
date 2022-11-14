@@ -1,7 +1,19 @@
 class LearningResourcesController < ApplicationController
 
   def show
-    learning_resources = LearningResourceFacade.learning_resources(params[:country])
-    render json: {data: learning_resources}
+    videos = VideoFacade.videos(params[:country])
+    images = ImageFacade.images(params[:country])
+
+    render json: {
+      data: {
+        id: nil,
+        type: "learning_resource",
+        attributes: {
+          country: params[:country],
+          video: videos[0],
+          images: images,
+        },
+      },
+    }
   end
 end

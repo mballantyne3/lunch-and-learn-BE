@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'learning resource service' do
   describe 'connection' do
     it 'can connect to the Youtube Service when given a country' do
-      resource_data = LearningResourceService.learning_resources('laos')
+      resource_data = VideoService.videos('laos')
 
       expect(resource_data).to be_a Hash
       expect(resource_data[:items]).to be_an Array
