@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=85b0702f&app_key=e4a9831769aa03e9ddaa98ad883877d2&q=aieudhabsdfi&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      server:
+      - openresty
+      date:
+      - Mon, 14 Nov 2022 16:08:43 GMT
+      content-type:
+      - application/json
+      content-length:
+      - '49'
+      connection:
+      - keep-alive
+      cache-control:
+      - private
+      expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      x-served-by:
+      - ip-10-0-1-10.ec2.internal/10.0.1.10
+      strict-transport-security:
+      - max-age=15552001
+      x-request-id:
+      - b3ef88176881f6efb2d3fe4cda82972a
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 14 Nov 2022 16:08:43 GMT
+recorded_with: VCR 6.1.0

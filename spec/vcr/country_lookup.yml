@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyD6VWaB_lPgozgxdsngBCASQx3Tgr7EvV8&part=snippet&q=Mr.+History+laos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=UTF-8
+      vary:
+      - Origin, X-Origin, Referer
+      content-encoding:
+      - gzip
+      date:
+      - Mon, 14 Nov 2022 16:07:06 GMT
+      server:
+      - scaffolding on HTTPServer2
+      cache-control:
+      - private
+      x-xss-protection:
+      - '0'
+      x-frame-options:
+      - SAMEORIGIN
+      x-content-type-options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: "{\n  \"kind\": \"youtube#searchListResponse\",\n  \"etag\": \"xPq69ICew_E-YeDAwckhJ1vZKJ0\",\n
+        \ \"nextPageToken\": \"CAUQAA\",\n  \"regionCode\": \"US\",\n  \"pageInfo\":
+        {\n    \"totalResults\": 1000000,\n    \"resultsPerPage\": 5\n  },\n  \"items\":
+        [\n    {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"g_AANaDO0PP_y9-nAEiKyK7DquE\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"uw8hjVqxMXw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2021-08-29T10:13:10Z\",\n        \"channelId\": \"UCluQ5yInbeAkkeCndNnUhpw\",\n
+        \       \"title\": \"A Super Quick History of Laos\",\n        \"description\":
+        \"Audio Requiring Attribution: LukeIRL: https://freesound.org/people/LukeIRL/sounds/176134/
+        RTB45: ...\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/uw8hjVqxMXw/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/uw8hjVqxMXw/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/uw8hjVqxMXw/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"Mr History\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2021-08-29T10:13:10Z\"\n      }\n    },\n
+        \   {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"qNOXiNafgoiows9ZkPjksmv3IRM\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"eXSs0QJ3Dww\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-05-04T05:56:51Z\",\n        \"channelId\": \"UCluQ5yInbeAkkeCndNnUhpw\",\n
+        \       \"title\": \"A Super Quick History of Myanmar (AKA Burma)\",\n        \"description\":
+        \"Pictures Requiring Attribution: Davidsnique: ...\",\n        \"thumbnails\":
+        {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/eXSs0QJ3Dww/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/eXSs0QJ3Dww/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/eXSs0QJ3Dww/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"Mr History\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-05-04T05:56:51Z\"\n      }\n    },\n
+        \   {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"OKJAjqw5878N33L9OFZzFF_yA34\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#channel\",\n        \"channelId\":
+        \"UCluQ5yInbeAkkeCndNnUhpw\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2017-05-14T04:40:16Z\",\n        \"channelId\": \"UCluQ5yInbeAkkeCndNnUhpw\",\n
+        \       \"title\": \"Mr History\",\n        \"description\": \"Hi there, welcome
+        to Mr History! On this channel I'd like to answer the common and uncommon
+        questions people have about ...\",\n        \"thumbnails\": {\n          \"default\":
+        {\n            \"url\": \"https://yt3.ggpht.com/ytc/AMLnZu_wcMWlnboWDLxqC2gZ0bydYna2u6XVsGck7udhsA=s88-c-k-c0xffffffff-no-rj-mo\"\n
+        \         },\n          \"medium\": {\n            \"url\": \"https://yt3.ggpht.com/ytc/AMLnZu_wcMWlnboWDLxqC2gZ0bydYna2u6XVsGck7udhsA=s240-c-k-c0xffffffff-no-rj-mo\"\n
+        \         },\n          \"high\": {\n            \"url\": \"https://yt3.ggpht.com/ytc/AMLnZu_wcMWlnboWDLxqC2gZ0bydYna2u6XVsGck7udhsA=s800-c-k-c0xffffffff-no-rj-mo\"\n
+        \         }\n        },\n        \"channelTitle\": \"Mr History\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2017-05-14T04:40:16Z\"\n      }\n    },\n
+        \   {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"FMxylSh--1LYyD51V19-u8lxoLk\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#video\",\n        \"videoId\":
+        \"drRkXVSfR-s\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2016-12-20T20:44:24Z\",\n        \"channelId\": \"UCsT0YIqwnpJCM-mx7-gSA4Q\",\n
+        \       \"title\": \"The Idea of Laos | Anoulak Kittikhoun | TEDxLaneXangAve\",\n
+        \       \"description\": \"What is the idea of Laos? The idea of Laos, like
+        all ideas, is based on two things and two things only: the place we are located
+        in, ...\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\":
+        \"https://i.ytimg.com/vi/drRkXVSfR-s/default.jpg\",\n            \"width\":
+        120,\n            \"height\": 90\n          },\n          \"medium\": {\n
+        \           \"url\": \"https://i.ytimg.com/vi/drRkXVSfR-s/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/drRkXVSfR-s/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"TEDx Talks\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2016-12-20T20:44:24Z\"\n      }\n    },\n
+        \   {\n      \"kind\": \"youtube#searchResult\",\n      \"etag\": \"tQX_oI4rQJUlypun3Vek2pCBOMk\",\n
+        \     \"id\": {\n        \"kind\": \"youtube#playlist\",\n        \"playlistId\":
+        \"PLM6BF7AmaR7kpUwmZ8LBEWilsFTL-H-9d\"\n      },\n      \"snippet\": {\n        \"publishedAt\":
+        \"2022-02-03T06:23:24Z\",\n        \"channelId\": \"UC2ikVkVnfwNK6zw-u0FugOA\",\n
+        \       \"title\": \"Mr. History Asia \U0001F418\U0001F409\U0001F434\U0001F54C\U0001F3DD\",\n
+        \       \"description\": \"\",\n        \"thumbnails\": {\n          \"default\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/dB6Xoemx214/default.jpg\",\n
+        \           \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/dB6Xoemx214/mqdefault.jpg\",\n
+        \           \"width\": 320,\n            \"height\": 180\n          },\n          \"high\":
+        {\n            \"url\": \"https://i.ytimg.com/vi/dB6Xoemx214/hqdefault.jpg\",\n
+        \           \"width\": 480,\n            \"height\": 360\n          }\n        },\n
+        \       \"channelTitle\": \"Chris :p 123\",\n        \"liveBroadcastContent\":
+        \"none\",\n        \"publishTime\": \"2022-02-03T06:23:24Z\"\n      }\n    }\n
+        \ ]\n}\n"
+  recorded_at: Mon, 14 Nov 2022 16:07:06 GMT
+recorded_with: VCR 6.1.0
