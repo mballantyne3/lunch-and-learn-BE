@@ -11,33 +11,33 @@ RSpec.describe 'GeoApify Request for Tourist Sights' do
         parsed_response = JSON.parse(response.body, symbolize_names: true)
 
         expect(parsed_response).to match data: an_instance_of(Array)
-        expect(parsed_response[:data]).to match(
+        expect(parsed_response[:data]).to match a_collection_starting_with(
           [
             {
-              id: null,
+              id: nil,
               type: "tourist_sight",
               attributes: {
-                name: "Tour de l'horloge",
-                address: "Tour de l'horloge, Allée de l'Horloge, 23200 Aubusson, France",
-                place_id: "51d28..."
+                name: "Maison de Chateaubriand",
+                address: "87 Rue de Chateaubriand, 92290 Châtenay-Malabry, France",
+                place_id: "515d1f5d62721d024059cf1b831ae7624840f00102f901de515805000000009203174d6169736f6e2064652043686174656175627269616e64"
               }
             },
             {
-              id: null,
+              id: nil,
               type: "tourist_sight",
               attributes: {
-                name: "Le Château",
-                address: "Le Château, D 18, 23150 Ahun, France",
-                place_id: "51934..."
+                name: "Collège des Bernardins",
+                address: "20 Rue de Poissy, 75005 Paris, France",
+                place_id: "51f9513861f2d00240591ead34dda66c4840f00102f901f5a3950100000000920317436f6c6cc3a8676520646573204265726e617264696e73"
               }
             },
             {
-              id: null,
+              id: nil,
               type: "tourist_sight",
               attributes: {
-                name: "Le Chapître",
-                address: "Le Chapître, Rue du Chapitre, 23200 Aubusson, France",
-                place_id: "517182..."
+                name: "Cimetière militaire américain",
+                address: "Avenue du Professeur Léon Bernard, 92150 Suresnes, France",
+                place_id: "511f9490d0a3bd014059808ad671a46f4840f00102f9013c601e020000000092031f43696d657469c3a87265206d696c69746169726520616dc3a972696361696e"
               },
             }
           ]
