@@ -10,7 +10,7 @@ class LearningResourcesController < ApplicationController
         type: "learning_resource",
         attributes: {
           country: params[:country],
-          video: videos[0],
+          video: videos[0] || [],
           images: images,
         },
       },

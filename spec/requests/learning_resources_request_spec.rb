@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'learning resources request' do
   describe 'happy path' do
     it 'returns learning resources for a specific country' do
+      VCR.use_cassette('learning_resources') do
       get '/api/v1/learning_resources?country=laos'
 
       expect(response).to be_successful
@@ -35,12 +36,14 @@ RSpec.describe 'learning resources request' do
           }
         }
       )
+      end
     end
   end
 
   describe 'sad path testing' do
     it 'returns an empty object if no video or image was found' do
-      get '/api/v1/learning_resources?country=fjkdsloafjdilfjdskl'
+      VCR.use_cassette('sad_path_country') do
+      get '/api/v1/learning_resources?country=%22hiauhdfy3985gfaiwy4egacsdiuhr%22'
 
       expect(response).to be_successful
 
@@ -50,6 +53,7 @@ RSpec.describe 'learning resources request' do
       expect(parsed_response[:data]).to have_key(:attributes)
       expect(parsed_response[:data][:attributes][:images]).to eq([])
       expect(parsed_response[:data][:attributes][:video]).to eq([])
+      end
     end
   end
 end
