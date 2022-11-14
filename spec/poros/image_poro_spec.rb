@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Image Poro' do
+RSpec.describe 'ImagePoro' do
   describe 'initialization' do
     it 'instantiates as an ImagePoro object' do
       image_data = {

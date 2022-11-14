@@ -1,5 +1,5 @@
 class RecipePoro
-  attr_reader :id, :type, :attributes
+  attr_reader :id, :type, :attributes, :title, :url, :country, :image
 
   def initialize(data)
     @id = nil

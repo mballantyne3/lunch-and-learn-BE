@@ -37,4 +37,19 @@ RSpec.describe 'learning resources request' do
       )
     end
   end
+
+  describe 'sad path testing' do
+    it 'returns an empty object if no video or image was found' do
+      get '/api/v1/learning_resources?country=fjkdsloafjdilfjdskl'
+
+      expect(response).to be_successful
+
+      parsed_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed_response).to have_key(:data)
+      expect(parsed_response[:data]).to have_key(:attributes)
+      expect(parsed_response[:data][:attributes][:images]).to eq([])
+      expect(parsed_response[:data][:attributes][:video]).to eq([])
+    end
+  end
 end
