@@ -14,8 +14,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="RunManager" selected="RSpec.user sad path gives an error message if an email address already exists upon user creation">
-    <configuration name="API Key creation can be created" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="RSpec.User Favorites Request happy path post to user favorites can post a request for a users favorite recipes">
+    <configuration name="User Favorites Request happy path post to user favorites can post a request for a users favorite recipes" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="lunch-and-learn-BE" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -36,11 +36,11 @@
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/features/api_key_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/favorites_request_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="API Key creation can be created" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Favorites Request happy path post to user favorites can post a request for a users favorite recipes" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -218,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.User Favorites Request happy path post to user favorites can post a request for a users favorite recipes" />
         <item itemvalue="RSpec.user sad path gives an error message if an email address already exists upon user creation" />
         <item itemvalue="RSpec.User validations" />
         <item itemvalue="RSpec.User has attributes" />
         <item itemvalue="RSpec.user create new user can create a new user when given required params" />
-        <item itemvalue="RSpec.API Key creation can be created" />
       </list>
     </recent_temporary>
   </component>
@@ -233,6 +233,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@learning_resources_request_happy_path_returns_learning_resources_for_a_specific_country.rcov" NAME="learning resources request happy path returns learning resources for a specific country Coverage Results" MODIFIED="1668383926713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@GeoApify_Request_for_Tourist_Sights_happy_path_returns_tourist_sights_of_a_given_countries_capital_within_a_20000_meter_radius.rcov" NAME="GeoApify Request for Tourist Sights happy path returns tourist sights of a given countries capital within a 20000 meter radius Coverage Results" MODIFIED="1668450412705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
+    <SUITE FILE_PATH="coverage/lunch_and_learn_BE@User_Favorites_Request_happy_path_post_to_user_favorites_can_post_a_request_for_a_users_favorite_recipes.rcov" NAME="User Favorites Request happy path post to user favorites can post a request for a users favorite recipes Coverage Results" MODIFIED="1668537538719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@learning_resources_request_sad_path_testing_returns_an_empty_object_if_no_video_or_image_was_found.rcov" NAME="learning resources request sad path testing returns an empty object if no video or image was found Coverage Results" MODIFIED="1668465533291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@User_has_attributes.rcov" NAME="User has attributes Coverage Results" MODIFIED="1668531988490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />
     <SUITE FILE_PATH="coverage/lunch_and_learn_BE@user_sad_path_gives_an_error_message_if_an_email_address_already_exists_upon_user_creation.rcov" NAME="user sad path gives an error message if an email address already exists upon user creation Coverage Results" MODIFIED="1668535270711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lunch-and-learn-BE" />

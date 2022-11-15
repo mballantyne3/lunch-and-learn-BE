@@ -5,6 +5,8 @@ class User < ApplicationRecord
   validates_presence_of :api_key, allow_nil: true
   validates_uniqueness_of :api_key
 
+  has_many :favorites
+
   before_create :set_api_key
 
   def set_api_key
