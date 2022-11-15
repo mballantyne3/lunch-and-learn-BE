@@ -79,7 +79,7 @@ RSpec.describe 'Users Favorites Index Request' do
 
       parsed_response = JSON.parse(response.body, symbolize_names: true)
 
-      expect(parsed_response).to eq []
+      expect(parsed_response[:data]).to eq []
     end
   end
 end
