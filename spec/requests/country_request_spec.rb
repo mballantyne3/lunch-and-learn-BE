@@ -7,4 +7,13 @@ RSpec.describe 'REST country request' do
     expect(lat_long).to eq([48.87, 2.33])
     end
   end
+
+  it "returns a randomized country" do
+    VCR.use_cassette('randomize_country') do
+
+      @country = CountryFacade.randomize_country
+
+      expect(@country).to be_a(String)
+    end
+  end
 end
