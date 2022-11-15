@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
       user.set_api_key
-      render json: { data: user }, status: 201
+      render json: { data: UserPoro.new(user) }, status: 201
     end
   end
 
