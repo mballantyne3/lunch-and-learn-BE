@@ -29,4 +29,22 @@ RSpec.describe 'user' do
       expect(parsed_response[:data][:attributes][:api_key]).to be_a String
     end
   end
+
+  describe 'sad path' do
+    it 'gives an error message if an email address already exists upon user creation' do
+      user_1_params = { name: 'Athena', email: 'supercoollady@gmail.com' }
+      headers = { 'CONTENT-TYPE' => 'application/json' }
+
+      post api_v1_users_path, headers: headers, params: JSON.generate(user: user_1_params)
+
+      expect(response).to be_successful
+
+      user_2_params = { name: 'Aphrodite', email: 'supercoollady@gmail.com' }
+      headers = { 'CONTENT-TYPE' => 'application/json' }
+
+      post api_v1_users_path, headers: headers, params: JSON.generate(user: user_2_params)
+
+      expect(response).to have_http_status 422
+    end
+  end
 end
