@@ -45,6 +45,11 @@ RSpec.describe 'user' do
       post api_v1_users_path, headers: headers, params: JSON.generate(user: user_2_params)
 
       expect(response).to have_http_status 422
+
+      parsed_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed_response).to be_a Hash
+      expect(parsed_response[:email]).to eq(["has already been taken"])
     end
   end
 end
