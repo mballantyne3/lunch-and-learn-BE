@@ -61,4 +61,25 @@ RSpec.describe 'Users Favorites Index Request' do
       )
     end
   end
+
+  describe 'sad path' do
+    it 'returns a 404 error if an api_key is invalid' do
+      get "/api/v1/favorites?api_key=asdhfiadu78934578"
+
+      expect(response).to_not be_successful
+      expect(response).to have_http_status 404
+    end
+
+    it 'returns an empty array if a user has not favorited any recipes' do
+      @ron = User.create!(name: "Ron", email: "gryffindorlife@gmail.com")
+
+      get "/api/v1/favorites?api_key=#{@ron.api_key}"
+
+      expect(response).to be_successful
+
+      parsed_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed_response).to eq []
+    end
+  end
 end
