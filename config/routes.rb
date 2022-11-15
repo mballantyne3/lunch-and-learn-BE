@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get '/api/v1/learning_resources', to: "learning_resources#show"
   get '/api/v1/tourist_sights', to: "tourist_sights#index"
   post '/api/v1/users', to: "users#create"
+
+  get '/api/v1/favorites', to: "favorites#index"
   post '/api/v1/favorites', to: "favorites#create"
 end

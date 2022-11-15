@@ -22,7 +22,7 @@ RSpec.describe 'User Favorites Request' do
 
         headers = { 'CONTENT-TYPE' => 'application/json'}
 
-        post '/api/v1/favorites', headers: headers, params: JSON.generate(favorite: favorite_params)
+        post '/api/v1/favorites', headers: headers, params: JSON.generate(favorite: favorite_params, api_key: @aries.reload.api_key)
 
         expect(response).to be_successful
         expect(response).to have_http_status 201
