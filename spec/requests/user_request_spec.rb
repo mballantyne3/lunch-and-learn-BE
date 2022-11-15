@@ -17,6 +17,8 @@ RSpec.describe 'user' do
       user_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(user_response).to be_a Hash
+      expect(user_response).to have_key :data
+      expect(user_response).to have_key :type
     end
   end
 end
